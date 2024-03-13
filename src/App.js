@@ -28,9 +28,13 @@ function App() {
               <Navbar />
               <hr></hr>
               <Routes>
-                <Route path={`${PATH}/`} index element={<Products />} />
-                <Route path={`${PATH}/order`} element={<Orders />} />
-                <Route path={`${PATH}/cart`} element={<Cart />} />
+                <Route path={`${PATH}/cart`}  index element={<Cart />} />
+             
+                <Route path={`${PATH}/order`}  element={<Orders />} /> 
+                <Route path={`${PATH}/`}   element={<Products />} /> 
+
+
+
               </Routes>
               <Footer />
             </Router>
@@ -41,3 +45,4 @@ function App() {
   );
 }
 export default App;
+
