@@ -26,6 +26,8 @@ export default function Cart() {
     setCartItems((prev) => ({ ...prev, [id]: qty }));
   };
 
+
+  
   const submitOrder = () => {
     order.date = Date().slice(0, 15);
     order.email = user.email;
@@ -45,11 +47,12 @@ export default function Cart() {
           <div className="Cart-div-left">
             <table className="Cart-table">
               <tr>
-                <th>Item count</th>
+                <th>Item count </th>
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
               </tr>
+  
               {products.map((elem) => {
                 if (cartItems[elem.id]) {
                   return (
