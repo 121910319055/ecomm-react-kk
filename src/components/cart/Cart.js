@@ -45,7 +45,7 @@ export default function Cart() {
           <div className="Cart-div-left">
             <table className="Cart-table">
               <tr>
-                <th>Item</th>
+                <th>Item count</th>
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
@@ -91,7 +91,7 @@ export default function Cart() {
             <div className="Cart-order-value">Order Value: ₹{orderValue}</div>
             <div className="Cart-order-value">
               <button onClick={submitOrder} className="Cart-place-order">
-                Submit Order
+                proseed to buy
               </button>
             </div>
           </div>
